@@ -1,0 +1,38 @@
+Salesforce	
+	Designed for users who require full access to standard CRM and Salesforce AppExchange apps. 
+	Users with this user license are entitled to access any standard or custom app.
+	Each license provides additional storage for Enterprise, Unlimited, and Performance Edition users.
+	Available in - All editions
+
+Knowledge Only User	
+	Designed for users who only need access to the Salesforce Knowledge app. 
+	This license provides access to custom objects, custom tabs, and the following standard tabs.
+	Available in - Enterprise, Unlimited, and Performance Editions
+	
+Salesforce Platform	
+	Designed for users who need access to custom apps but not to standard CRM functionality. 
+	Users with this user license are entitled to use custom apps developed in your organization or installed from Salesforce AppExchange. 
+	In addition, they are entitled to use core platform functionality such as accounts, contacts, reports, dashboards, documents, and custom tabs. 
+	These users are not entitled to some user permissions and standard apps, including report subscriptions and standard tabs and 
+	objects such as forecasts, leads, campaigns, and opportunities. 
+	Available in - Enterprise, Unlimited, Performance, and Developer Editions
+	
+Chatter
+	The Chatter Only license is available for purchase only by existing Chatter Plus customers. 
+	For new customers, the Lightning Platform Starter license is a step up from Chatter Only, 
+	giving your users access to a more robust set of features.
+	
+Chatter Free
+	The Chatter Free license is for users who don’t have Salesforce licenses but must have access to Chatter. 
+	These users can access standard Chatter items such as people, profiles, groups, and files, but they can’t access any Salesforce objects or data. 
+	Chatter Free users can also be Chatter moderators.
+	Chatter Free users don’t see tabs like other Salesforce users. 
+	Chatter Free users access feeds, people, groups, and files using the App Launcher in Lightning Experience. 
+	In Salesforce Classic, users access these features from links in the page sidebar.
+	Salesforce administrators can upgrade a Chatter Free license to a standard Salesforce or Lightning Platform Starter license at any time. 
+	You can’t convert a standard Salesforce, Lightning Platform Starter, or Chatter Only license to a Chatter Free license.
+
+Marketing
+	The 'Marketing User' feature allows a user to manage Campaigns. 
+	Campaigns is an object used in Salesforce to track a marketing process, both for existing and prospect clients. 
+	It is pretty standard; will relate a lead or a contact (and possibly an opportunity) with a specific campaign.
