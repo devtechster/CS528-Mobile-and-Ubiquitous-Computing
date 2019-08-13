@@ -1,0 +1,48 @@
+	 _________________
+	|Date : 05 August |
+	|_________________|
+
+ 1. Difference between Clone and Deepclone
+ 
+ 2. Return type of the DB.upsert / DB.update
+
+	 _________________
+	|Date : 13 August |
+	|_________________|
+
+ 1. We can use variables in apex pages also  with the help of 
+	apex variable
+
+ 2. Is there any interface we can implement in the Trigger we generate dircetly helper class
+
+ 3. What is Aura method? Where we can use?
+ 
+ 4. View State.
+
+ 5. RIGHT formula in the VF pages 
+ 
+ 6. Three groung rules for displaying the variables on the VF page
+	
+	- public
+	- non-static
+	- setters
+
+ 7. Drawback of Transient
+	once transaction is complete its value gets refreshed
+	
+ 8. Where to use transient variable
+	use transient whenever we want to display information in one transaction only
+	otherwise use static variable for holding value throughout the complete transaction
+
+ 9. Use cases for transient.
+ 
+10. Apex Variable in the VF pages.
+
+11. Delta update
+
+12. How much inner queries at a time.
+
+13. Query account having Id and Name
+	insert it into the Set and Map
+
+14. Lazy loading can be used using offset and limit
