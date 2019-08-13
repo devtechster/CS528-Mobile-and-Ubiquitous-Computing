@@ -10,10 +10,11 @@
 	|Date : 13 August |
 	|_________________|
 
- 1. We can use variables in apex pages also  with the help of 
-	apex variable
+ 1. We can use variables in apex pages also  with the help 
+	of apex variable
 
- 2. Is there any interface we can implement in the Trigger we generate dircetly helper class
+ 2. Is there any interface we can implement in the Trigger 
+	we generate dircetly helper class
 
  3. What is Aura method? Where we can use?
  
@@ -21,7 +22,8 @@
 
  5. RIGHT formula in the VF pages 
  
- 6. Three groung rules for displaying the variables on the VF page
+ 6. Three groung rules for displaying the variables on the 
+	VF page :
 	
 	- public
 	- non-static
@@ -30,15 +32,16 @@
  7. Drawback of Transient
 	once transaction is complete its value gets refreshed
 	
- 8. Where to use transient variable
-	use transient whenever we want to display information in one transaction only
-	otherwise use static variable for holding value throughout the complete transaction
+ 8. Where to use 'transient' variable
+	use 'transient' whenever we want to display information 
+	in one transaction only otherwise use static variable 
+	for holding value throughout the complete transaction.
 
- 9. Use cases for transient.
+ 9. Use cases for 'transient'.
  
 10. Apex Variable in the VF pages.
 
-11. Delta update
+11. Delta update.
 
 12. How much inner queries at a time.
 
@@ -46,3 +49,19 @@
 	insert it into the Set and Map
 
 14. Lazy loading can be used using offset and limit
+
+15. Static resources can cause increase in the development 
+	time at the time of using development; as every time 
+	if we are making changes, they should be updated 
+	immidiately.
+
+16. Significance of '===' in salesforce.
+	(check in the Developers guide).
+
+17. Apply custom CSS in the Lightining Components 
+	through the static resources.
+
+18. Commented JS code is visible on the client side or not?
+	(in case of lightning only)
+	
+19. To minimize server calls write it them in the wrappers.
