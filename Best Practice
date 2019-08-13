@@ -65,3 +65,7 @@
 	(in case of lightning only)
 	
 19. To minimize server calls write it them in the wrappers.
+
+20. Why we need to avoid chaning of conroller actions.
+	If dependency increases then chaining gets increasing 
+	which eventually execution time.
