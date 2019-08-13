@@ -1,8 +1,8 @@
 /*
-Create a custom object 'A', 'B' and 'C'. 
+Create a custom object 'A', 'B' and 'C'.
 Establish 'Master Detail' relationship between them such that ‘C’ is junction object.
 */
-public with sharing class SoqlRelation 
+public with sharing class SoqlRelation
 {
 
         /***************************************************************************************
@@ -33,9 +33,9 @@ public with sharing class SoqlRelation
         }
     }
 
-   /*
-    Write SOQL query on 'C'(created above) to retrieve all records of 
-    'C' with name 'John' along with parent details. 
+    /*
+    Write SOQL query on 'C'(created above) to retrieve all records of
+    'C' with name 'John' along with parent details.
     */
     public void soqlOnCustomObject()
     {
@@ -57,38 +57,38 @@ public with sharing class SoqlRelation
     }
 
     /**************************************************************************************************
-    Write a SOQL query on Account and find all associated contact records of the Account which contains 
-    the word 'John'. 
+    Write a SOQL query on Account and find all associated contact records of the Account which contains
+    the word 'John'.
     Print all Account and Contact records retrieved above.
     *****************************************************************************************************/
     public void queryAcc() {
         List<Account> accountList = [
-                                        SELECT 
-                                                Id, 
-                                                Name, 
+                                        SELECT
+                                                Id,
+                                                Name,
                                         (
-                                        SELECT 
-                                                Id, 
-                                                FirstName, 
-                                                LastName 
-                                        FROM    Contacts 
+                                        SELECT
+                                                Id,
+                                                FirstName,
+                                                LastName
+                                        FROM    Contacts
                                         WHERE   FirstName LIKE '%John%'
                                         OR      LastName LIKE '%John%'
-                                        ) 
+                                        )
                                         FROM Account];
 
-        if(accountList == null) 
+        if(accountList == null)
         {
             return;
         }
 
         for(Account account : accountList) {
-            if(account.Contacts.isEmpty()) 
+            if(account.Contacts.isEmpty())
             {
                 continue;
             }
             System.debug('Account : ' + account.Name);
-                
+
                 for(Contact contact : account.Contacts) {
 
                     System.debug('Contact : ' + contact.FirstName + ' ' + contact.LastName);
@@ -97,31 +97,31 @@ public with sharing class SoqlRelation
     }
 
     /**************************************************************************
-    Write a SOQL query to find all Account records, 
+    Write a SOQL query to find all Account records,
     which have at least an opportunity record which is 'Closed Won'.
     ***************************************************************************/
 
-        public void soqlonAcc() 
+        public void soqlonAcc()
         {
         List<Account> accountList = [
-                                        SELECT 
+                                        SELECT
                                                 Id,
                                                 Name,
                                                 (
-                                                   SELECT   Id, 
-                                                            AccountId 
-                                                    FROM    Opportunity 
-                                                    WHERE   Stage ='Closed Won'
-                                                )    
+                                                    SELECT   Id,
+                                                            AccountId
+                                                    FROM    Opportunities
+                                                    WHERE   StageName ='Closed Won'
+                                                )
                                         FROM    Account
                                         ];
 
         for(Account accInstance : accountList){
 
             System.debug('Account Details :' + accInstance) ;
-            
-            for(Opportunity opIns : accInstance.Opportunity){
-            
+
+            for(Opportunity opIns : accInstance.Opportunities){
+
             System.debug('Opportunity Details :' + opIns.AccountId) ;
 
             }
@@ -129,5 +129,4 @@ public with sharing class SoqlRelation
     }
 
 
- 
 }
