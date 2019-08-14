@@ -1,0 +1,41 @@
+<apex:page Controller="ExtClass">
+    <apex:form >
+    <apex:inputText id="accountIdInp" value="{!accountId}"/>
+    <apex:commandButton value="Show Contacts" action="{!execQuery}" reRender="hidden_content"/>
+    <apex:outputPanel id="hidden_content">
+        <apex:pageBlock title="Contacts " rendered="{! contactList != null}">
+            <apex:pageBlockTable value="{!contactList}" var="contactObject">
+                <apex:column value="{!contactObject.FirstName}" />
+                <apex:column value="{!contactObject.LastName}" onclick="getPhone('{!contactObject.Id}');" >
+                </apex:column> 
+                <apex:column >
+                    <apex:commandLink reRender="checkAgain">
+                	 	{!contactObject.Name}
+                        <apex:param name="contactId" value="{!contactObject.Id}"/>
+                	</apex:commandLink>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:outputPanel>
+    </apex:form> 
+    <apex:outputPanel id="checkAgain">
+        <apex:outputPanel ></apex:outputPanel>
+    	<apex:detail subject="{!$CurrentPage.Parameters.contactId}" relatedList="false" inlineEdit="true" oncomplete="alert('hello')"/>
+    </apex:outputPanel>
+    
+    
+    <script>
+    	function getPhone(Id){
+            alert(Id);
+            ExtClass.getPhoneNumber(Id,
+                                   function(returnedResult,event){
+                                       console.log(event);
+                                       console.log(returnedResult);
+                                       if(event.status){
+                                           alert(returnedResult.Phone);
+                                       }
+                                            
+                                   })
+            }
+    </script>
+</apex:page>
