@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="0dp"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/image_1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:src="@drawable/i1" />
+
+        <ImageView
+            android:id="@+id/image_2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:src="@drawable/i2"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/image_3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:src="@drawable/i3"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background">
+
+        <TextView
+            android:id="@+id/show_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:text="@string/Button1"
+            android:textSize="18sp"
+            android:background="@drawable/custombutton">
+        </TextView>
+
+        <TextView
+            android:id="@+id/show_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/grey"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:background="@drawable/custombutton"
+            android:text="@string/Button2">
+        </TextView>
+
+        <TextView
+            android:id="@+id/show_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:text="@string/Button3"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/custombutton"
+            android:textColor="@color/grey">
+        </TextView>
+
+<!--        Additional functionality-->
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:text="RESET"
+            android:background="@drawable/custombutton"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/grey">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

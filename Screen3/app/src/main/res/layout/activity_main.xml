@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:padding="12dp"
+        android:background="@color/black"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/website1"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Website 1"
+            android:layout_margin="5dp"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/grey"
+            app:cornerRadius="5dp"/>
+
+        <Button
+            android:id="@+id/website2"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Website 2"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/red"
+            app:cornerRadius="5dp"/>
+
+        <Button
+            android:id="@+id/website3"
+            android:text="Website 3"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/red"
+            app:cornerRadius="5dp"/>
+    </TableRow>
+
+    <WebView
+        android:id="@+id/website"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true">
+    </WebView>
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffcc"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/toolbar">-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+<!--    Alternative way of doing it-->
+<!--    <TextView-->
+<!--        android:id="@+id/my_toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:background="#6200ee"-->
+<!--        android:padding="15dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:text="@string/app_name"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="@string/question_headline"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:text="@string/question_text"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/nicargua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/nicaragua_flag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/question"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_margin="2dp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Puerto_Rico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Puerto Rico"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="@color/grey"
+                android:textColor="@color/black"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Grenada"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Grenada"
+                android:layout_margin="5dp"
+                android:background="@color/grey"
+                android:textColor="@color/black"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Nicargua_button"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Nicargua"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:background="@color/grey"
+                android:textColor="@color/black"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_margin="2dp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Bahamas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bahamas"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@color/grey"
+                android:textColor="@color/black"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Guatemala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guatemala"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@color/grey"
+                android:textColor="@color/black"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Aruba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Aruba"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:background="@color/grey"
+                android:textColor="@color/black"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:text="@string/button1"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:padding="18dp"
+        android:gravity="center_horizontal"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/black"
+        android:background="@color/skin_color"
+        android:text="@string/button2"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+
+</LinearLayout>
