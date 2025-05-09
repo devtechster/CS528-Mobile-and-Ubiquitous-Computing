@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="address"> Address: 100 Institute Road, Worcester, MA 01609, USA </string>
+    <string name="app_name">Recognizing Activities</string>
+    <string name="salis">Visits to Salisbury Labs geoFence: %d</string>
+    <string name="steps">Steps taken since app started </string>
+    <string name="studio">Visits to Innovation Studio geoFence: %d</string>
+    <style name="Base.Theme.RecognizingActivities" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.RecognizingActivities" parent="Base.Theme.RecognizingActivities"/>
+</resources>

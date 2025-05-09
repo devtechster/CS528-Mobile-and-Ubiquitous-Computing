@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Recognizing Activities</string>
+    <string name="salis">Visits to Salisbury Labs geoFence: %d</string>
+    <string name="studio">Visits to Innovation Studio geoFence: %d</string>
+    <string name="steps">Steps taken since app started </string>
+    <string name="address"> Address: 100 Institute Road, Worcester, MA 01609, USA </string>
+
+
+</resources>

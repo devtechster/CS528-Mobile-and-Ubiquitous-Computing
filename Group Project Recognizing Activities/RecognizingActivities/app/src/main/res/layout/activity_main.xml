@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/salisburyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/salis"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/innovationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/studio"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_below="@id/salisburyTextView" />
+
+
+            <TextView
+                android:id="@+id/TextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/steps"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/innovationTextView" />
+
+    <TextView
+        android:id="@+id/textView_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/TextView3"
+        android:ellipsize="end"
+        android:text="" />
+
+    <TextView
+                android:id="@+id/TextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/TextView3" />
+    <!-- Map View -->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/MapView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/TextView4"
+        android:layout_marginTop="16dp"
+        app:cameraZoom="25" />
+
+    <!-- Image View with space below -->
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/MapView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/still" />
+
+    <!-- Label 4 (under Label 3) -->
+    <TextView
+        android:id="@+id/label4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"/>
+
+
+</RelativeLayout>
