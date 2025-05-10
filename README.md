@@ -9,4 +9,4 @@ I took this course in **Fall 2023**. The coursework included:
 
 For a course overview, refer to the `resources` folder.
 
-You can find my final project [here](https://github.com/devtechster/Quick-Learning)
+You can find my final project [here](https://github.com/devtechster/Quick-Learning) and Paper written [here](https://github.com/devtechster/CS528-Mobile-and-Ubiquitous-Computing/blob/master/PAPER%20Quick-learning%20app.pdf)
